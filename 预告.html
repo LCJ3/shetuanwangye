@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery新闻公告文字自动滚动代码 - 站长素材</title>
+
+<link rel="stylesheet" href="../1/jiaoben公告/jiaoben6030/css/style.css" />
+
+<script type="text/javascript" src="../1/jiaoben公告/jiaoben6030/js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="../1/jiaoben公告/jiaoben6030/js/jquery.SuperSlide.2.1.1.js"></script>
+
+</head>
+<body>
+
+<div style="height:10%;width:20%"></div>
+
+<div class="rolling">
+	<div class="roll-title roll-title clearfix">
+		<h2>社团公告</h2>
+		<a href="#" class="rolling-more">更多</a>
+		<a class="next">
+			<img src="../1/jiaoben公告/jiaoben6030/images/arrow-fr.png" alt="">
+		</a>
+		<a class="prev">
+			<img src="../1/jiaoben公告/jiaoben6030/images/arrow-fl.png" alt="">
+		</a>
+	</div>
+	<div class="content">
+		<ul class="roll-list">
+			<li>
+            <img align="left" height="80%" width="18%" src="视频封面.jpg"/>
+				<a href="#" target="_blank">音乐协会“敢爱敢唱”音乐会</a>
+                   <br>
+		<p style="color:#999">时间：2018年6月12日   地点：图书馆报告厅</p>
+        
+			</li>
+			<li>
+				<a href="#" target="_blank">关系我们每个人！700字读懂新闻号头条平台3·15资讯打假报告自媒体账号公告</a>
+				<span>2018年3月01日</span>
+			</li>
+			<li>
+				<a href="#" target="_blank">资讯消费如何打假才能保护合法权利？新闻号头条平台首次披露反谣言技术路线图</a>
+				<span>2018年2月22日</span>
+			</li>
+			<li>
+				<a href="#" target="_blank">国医·新闻号头条平台！“天堂学堂”网站发布的“北中医自主招生夏令营”资讯是假的！</a>
+				<span>2018年2月02日</span>
+			</li>
+			<li>
+				<a href="#" target="_blank">工信部下架“新闻号头条平台”等 46 款不良手机应用，，第一时间更新相关内容资料</a>
+				<span>2018年1月12日</span>
+			</li>
+			<li>
+				<a href="#" target="_blank">今闻号头条平台与内蒙古网信办战略合作伙伴 将用新闻号向世界推介亮丽内蒙古大草原</a>
+				<span>2017年12月21日</span>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	jQuery(".rolling").slide({titCell:".roll-title ul",mainCell:".content ul",autoPage:true,effect:"leftLoop",autoPlay:true,scroll:1,vis:1,delayTime:1000,trigger:"click"});
+
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.</p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+</body>
+</html>

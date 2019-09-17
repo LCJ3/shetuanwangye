@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>div分块</title>
+<link rel="icon" href="音乐.jpg" type="image/x-icon" />
+	<style type="text/css">
+	
+			a{
+				text-decoration:none;
+				color:#666; 
+				/*跳转*/
+				}
+				
+			#div2 a:hover
+			{
+				color:#F00;
+				}
+					/*尴尬*/
+	        #zt{
+				
+				width:45%;
+				border:1px solid #CF6;
+				height: 1020px;	
+				
+				margin: 0px auto;	
+				overflow:visible;	
+				}
+				#u{
+					position:fixed;
+					width:45%;	
+					height:35px;				
+					background-color:#FFF;
+					background-image:url(%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A4%BE%E5%9B%A2%E8%81%94%E7%9B%9Flogo.png);
+
+					background-repeat:no-repeat;
+					background-position:left;
+					background-size:200px 120px;
+				 top:0px;
+				 margin:0;
+				 padding:0;
+				
+				overflow:hidden;
+					}
+					
+					
+					
+		#nav{height:40px; background-color:#b6ff00;clear:both;}
+	#nav *{margin:0;padding:0;}
+	#nav a{text-decoration:none;}
+	/*一级菜单*/
+	#nav ul{margin:0 auto;width:620px; display:block;list-style-type:none;}
+	#nav ul li{display:block;width:120px;height:40px; line-height:40px; float:left;text-align:center;border-right:solid 1px white;}
+#nav ul li:last-child{border-right:none;}
+#nav ul li:hover{background-color:red;}
+/*二级菜单*/
+#nav ul li ul{display:none;}
+#nav ul li ul li{width:120px; height:40px; line-height:40px;background-color:rgba(95, 181, 43, 0.60);border-bottom:solid 1px #808080;}
+#nav ul li:hover ul{display:block;position:relative;width:120px;}
+#nav ul li ul li:hover{background-color:red;}
+/*三级菜单*/
+#nav ul li:hover ul li ul{display:none;}  /*li:hover表示的是就是的就是那个鼠标悬停时的效果，"#"表示的是省略网址*/
+#nav ul li:hover ul li:hover ul{display:block; position: relative; left: 120px; top: -30px;}
+#nav ul li:hover ul li:hover ul li{width:100px; height:30px; line-height: 30px;}
+#nav ul li:hover ul li:hover ul li:hover{background-color:red;}
+
+			#div2{
+				float:left;
+				width:40%;
+				height:800px;
+				border:2px solid blue;
+					
+					color:#666;
+						}
+				
+							
+						#div2 ul  li{			
+											list-style-type:none;
+											height:30px;
+											font-size:9px;
+									
+											
+											}
+										
+											#div2 ul  li:hover{
+								list-style:disc;
+								color:gold;
+	
+												}
+											
+								#div2   a{
+									display:inline-block;
+								float:left;
+										max-width:170px;
+										linr-height:10px;
+										overflow:hidden;
+										
+									 text-overflow:ellipsis;	
+									 white-space:nowrap;	/*牛逼这个*/
+									 
+									}
+								#div2 li span{
+								float:right;
+							text-align:center;
+							
+									}	
+									.div2_span{	
+									   background-color:#CCC;
+									   
+										}
+											#div2 span:hover,#u span:hover{
+				background-color:#F90;
+				
+				}
+						#div2 p{
+							
+							overflow:hidden;
+							font-size:9px;
+							}		
+							#div2 p:hover
+							{
+								color:#F0F;
+								}	
+			#div3{
+				float:left;
+				margin-left:4px;
+				/*上面两个一定同时搭配*/
+				width:20%;
+				height:800px;
+				border:2px solid red;
+			}
+			
+				#div4{
+					float:right;
+					margin-left:3px;
+					width:35%;
+					height:300px;
+					
+					border: 2px solid #999;
+					
+					/*上面两个搭配不可以少*/
+					}
+					
+					#div5{
+	                  float:right;
+					  	margin-left:3px;
+						width:35%;
+						height:480px;		
+					
+			position:relative;/*有了上面这个，下面代码才能相对旁边的*/
+			    top:10px;
+				
+						border: 2px solid #F66;
+						}
+							
+			#div6{
+				position:fixed;
+				right:22.8%;
+				top:80%;
+				/*width:5%;*/
+				padding:15px;
+				height:300px;
+			
+			/*border:2px solid black;*/
+				
+				}
+				  #div6 a:hover{
+				  color:#00F;
+				  }
+		#div6 ul
+			{		
+			display:table;
+			list-style-type:none;
+			
+				padding:0px;
+				/*两个合并才有彻底剧中效果*/
+				}
+				#div6 ul li{
+			
+				line-height:25px;
+			margin:0 auto;
+				border-top:solid 3px white;
+				background-color:#FF6;
+				}
+			#div7{/*脚注*/
+					width:100%;
+					height:130px;
+					margin:0px auto;
+							
+				clear:both;/*不浮动左右*/
+				 
+			
+				
+					border:2px solid black;/*不用这个*/
+				}
+					.ph{
+						font-size:14px;
+						font-weight:600px;
+						}
+				    		.ph:before{
+											content:'\260E';
+											font-size:22px;
+											color:red;
+												}                   
+				/*#top{
+					position:absolute;
+					left:75%;
+					top:100%;
+				height:10px;
+					}*/						
+					 .pic {
+    display:inline-table;
+    width: 5%;
+    height: 5%px;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+	font-size:9px;
+						}
+	</style>
+</head>
+
+
+<body style="min-width:600px">
+
+		       <div  id=zt>
+        	<div id=u  align="center" >
+        <img  src="音乐.jpg" height="20px"  />
+         <!--margin-left好评-->
+            <span><a href="#">个人主页</a></span>
+            
+            <img src="ooopic_1566454120.ico" style="margin-left:10px" height="20px" />
+              <span ><a href="#">首页</a></span>
+              
+              <img src="ooopic_1566454090.ico" style="margin-left:10px" height="20px" />
+             <span><a href="#">更多</a></span>
+             <span style="float:right" >
+             <img  src="ooopic_1566454102.ico" height=20px  />
+             <a href="#">
+            <button onclick="js()">登陆/注册</button></a></span>
+            <script>
+			function js()
+			{
+				alert("哈哈哈啊啊");
+				
+				}
+			</script>
+            
+          </div>
+<hr/>
+        <div id=nav >
+         <ul >
+        <li><a href="#">首页</a></li>
+        <li><a href="#">留言</a>
+            <ul>
+                <li><a href="#">我的留言</a></li>
+                <li><a href="#">别人留言</a></li>
+                <li><a href="#">回复</a></li>
+            </ul>
+        </li>
+        <li><a href="#">足迹</a>
+        			    <ul>
+                <li><a href="#">我的足迹</a>
+                				<ul>
+                			<li><a href="#">视频区</a></li>
+                              	<li><a href="#">图片区</a></li>
+                            </ul>
+                        </li>
+                <li><a href="#">我的点攒</a></li>
+                <li><a href="#">收藏</a></li>
+                </li>
+                <p>&nbsp;</p>
+                </ul>
+          <li><a href="#">动态</a></li>
+          		  <li><a href="#">下载</a></li>
+        </ul>
+        </div>
+        
+          <div style="height:5px"></div>
+            <!--相当于br-->
+ 
+        <div id=div2>
+        <img  align="left" src="ooopic_1566454120.ico" height="20px" width="20px"/>
+        <span style="float:left" class="div2_span" >热点事件</span>
+        <img src="5.gif" />
+        <ul>
+        <li>
+     <a href="http://politics.people.com.cn/n1/2019/0822/c1024-31311946.html" target="_blank">李克强:愿推动中日韩三国合作向更高层次迈进</a> <span style="float:right">2019/8/24</span>   </li>
+     	 <li>
+     <a href="https://s.weibo.com/weibo?q=%23%E9%A6%99%E6%B8%AF%E5%9B%9E%E5%BD%92%E6%97%B6%E7%9A%84%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%23&from=default" target="_blank">#香港回归时的升旗仪式#</a>    
+       <span style="float:right">2019/8/24</span></li>
+     	<li>  <a href="http://www.hxnews.com/news/gj/gjxw/201908/23/1795781.shtml" target="_blank">特朗普骂丹麦首相</a>
+        <span style="float:right">2019/8/24</span>
+        </li>
+     </ul>
+           <hr size="3px" />
+          <img  align="right" src="ooopic_1566454118.ico" height="20px" width="20px"/>  
+            <span style="float:right" class="div2_span">发现</span>
+           <img src="02.gif">
+           <br/>
+           <ul>
+       
+   			<li> 
+           
+  <a href="http://www.hxnews.com/news/gj/gjxw/201908/23/1795781.shtml" target="_blank">特朗普骂丹麦首相</a> 
+   <span style="float:right">2019/8/24</span>
+             </li>	
+              <li> 
+  <a href="http://www.hxnews.com/news/gj/gjxw/201908/23/1795781.shtml" target="_blank">特朗普骂丹麦首相</a> 
+             <span style="float:right">2019/8/24</span></li>
+          </ul>
+              
+              <hr />
+               <img  align="left" src="funny_laugh_128px_14381_easyicon.net.ico" height="20px" width="20px"/> 
+              <span style="float:left" class="div2_span">娱乐</span>
+              <img src="down_19_8_23_12_23_21.gif" height="90px" width="90px" />
+              <ul>
+              <li>  
+               <span >2019/8/24</span>
+     <a href="https://s.weibo.com/weibo?q=%23%E9%A6%99%E6%B8%AF%E5%9B%9E%E5%BD%92%E6%97%B6%E7%9A%84%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%23&from=default" target="_blank">#香港回归时的升旗仪式#</a>
+	</li>
+              </ul>
+        
+        <a href="https://baijiahao.baidu.com/s?id=1606562880383280489&wfr=spider&for=pc">每日一笑😄</a>     
+        <p>有个人留客人喝茶，因为没有茶叶，便到邻居家去借。很长时间邻居也没有送来，水烧开，也不见拿来，没办法只好不断往锅里添加凉水。过了半天，锅里的水已经满了，而茶叶最终也没有送来，妻子对丈夫说："茶是喝不成了，不如留他洗个澡算了。"</p>
+		 
+             
+   <br/>
+  
+    </ul>
+  </div>
+     
+        <div id=div3><span>弹幕吐槽</span>
+         <a href="#" class="showBarrage"><marquee bgcolor="white" direction="left/up" behavior="alternate" onmouseout=this.start() onmouseover=this.stop() scrolldelay="100" font-color:red  >
+<div>点击打开弹幕</div>
+</marquee></a>
+		<div><a><marquee bgcolor="white" direction="left/up" behavior='scroll' onmouseout=this.start() onmouseover=this.stop() scrolldelay="100">
+快点打开</marquee></a></div>
+          &nbsp;
+		  <p>
+		    <marquee bgcolor="white" direction="right" behavior='scroll' onmouseout=this.start() onmouseover=this.stop() scrolldelay="100" >
+	        打开了嘛
+	        </marquee>
+            <marquee bgcolor="white" direction="left" behavior='scroll' onmouseout=this.start() onmouseover=this.stop() scrolldelay="100" >
+	 爱你哟，么么哒😘
+	        </marquee>
+            &nbsp;
+		    <marquee bgcolor="white" direction="right" behavior='scroll' onmouseout=this.start() onmouseover=this.stop() scrolldelay="100" >
+	        大学生社团联盟欢迎你
+	        </marquee>
+		  </p>
+		  <p>&nbsp;</p>
+           <marquee bgcolor="white" direction="right" behavior='scroll' onmouseout=this.start() onmouseover=this.stop() scrolldelay="100" >
+	       <img src="5.gif" height="50%" width="50%" />
+	        </marquee>
+    <hr />
+          
+          <span class="pic">
+          <a><img  align="middle" src="幽默图片.gif" /></a>
+          <a  >高手过招，充满了火 药味儿</a>
+         </span>
+         	<span class="pic">
+          <a><img  align="middle" src="幽默图片.gif" /></a>
+          <a  >高手过招，充满了火 药味儿</a>
+         </span>
+        </div>
+        
+        <div id=div4> <span>视频区</span>
+        		<div><a href="https://krcom.cn/5888233693/episodes/2358773:4409244942840721"><img src="https://wx4.sinaimg.cn/crop.0.47.900.506.360/006quqzbly1g6c3wi5dqhj30p00go778.jpg" alt=""></a>
+                <span class="time">1:19</span>
+                </div>
+        
+        </div>
+        <div id=div5><span> 图片区</span> </div>
+        
+        
+        
+       
+          
+         <div id=div7 align="center">脚注
+     <div class="ph" align="center" >&ensp;&ensp;&ensp;联系我们 &ensp;133000000236</div>
+        
+         </div>
+</div>  
+         <div id=div6  align="center">
+        <!-- <h3>菜单导航</h3>-->
+          <ul  >
+          <li  ><a href="#">活动动态</a></li>
+            <li><a href="#">精彩回顾</a></li>
+        <li>  <a  style="color:#F00" href="javascript:scroll(0,0);">TOP返回顶部</a>
+         </li>
+          </ul>
+        
+</div>
+      
+</body>
+</html>

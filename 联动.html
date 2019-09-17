@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三级联动</title>
+
+    <script src="../jquery-3.2.1.min.js"></script>
+    <style>
+        body{
+            font-size: 14px;
+        }
+        .clsInit{
+            width: 436px;
+            height: 35px;
+            line-height: 35px;
+            padding-left: 10px;
+        }
+        .clsTip{
+            padding-top: 5px;
+            background-color: #eeeeee;
+            display: none;
+        }
+        .btn{
+            border: 1px solid #666666;
+            padding: 2px;
+            width: 65px;
+            float: right;
+            margin-top: 6px;
+            margin-left: 6px;
+        }
+    </style>
+</head>
+<body>
+      <div class="clsInit">
+          厂商 <select name="" id="selF">
+          <option  class="c">请选择</option>
+          <option  value="F1" id="F1">厂商1</option>
+          <option  value="F2" id="F2">厂商2</option>
+      </select>
+          品牌 <select name="" id="selT">
+          <option  class="c">请选择</option>
+          <option  class="T1" value="1-1">品牌1-1</option>
+          <option  class="T1" value="1-2">品牌1-2</option>
+          <option  class="T2" value="2-1">品牌2-1</option>
+          <option  class="T2" value="2-2">品牌2-2</option>
+
+      </select>
+          型号<select name="" id="selC">
+          <option value="" class="c">请选择</option>
+          <option  class="C1">型号1-1-1</option>
+          <option  class="C1">型号1-1-2</option>
+          <option  class="C2">型号1-2-1</option>
+          <option  class="C2">型号1-2-2</option>
+          <option  class="C2">型号1-2-3</option>
+          <option  class="C2">型号1-2-4</option>
+          <option  class="C3">型号2-1-1</option>
+          <option  class="C4">型号2-2-1</option>
+      </select>
+          <input type="button" id="button1" value="查询品牌" class="btn">
+          <input type="button" id="button2" value="查询型号" class="btn">
+      </div>
+<div class="clsTip" id="divTip">
+
+</div>
+      <script>
+      $(function () {
+          $("#button1").click(function(){
+              var options =$("#selF option:checked");
+              if(options.val()=="F1"){
+                  $(".T1").show();
+                  $(".T2").hide();
+              }else if(options.val()=="F2"){
+                  $(".T2").show();
+                  $(".T1").hide();
+              }
+          })
+          $("#button2").click(function(){
+              var options2 =$("#selT option:checked");
+              if(options2.val()=="1-1"){
+                  $(".C1").show();
+                  $(".C2,.C3,.C4").hide();
+              }else if(options2.val()=="1-2"){
+                  $(".C2").show();
+                  $(".C1,.C3,.C4").hide();
+              }else if(options2.val()=="2-1"){
+                  $(".C3").show();
+                  $(".C1,.C2,.C4").hide();
+              } else if(options2.val()=="2-2"){
+                  $(".C4").show();
+                  $(".C1,.C2,.C3").hide();
+              }
+          })
+             });
+
+      </script>
+</body>
+</html>

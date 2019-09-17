@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>大学生社团联盟网站    </title>
+	<SCRIPT type=text/javascript>
+function menuFix() { 
+var sfEls = document.getElementById("fm").getElementsByTagName("li"); 
+for (var i=0; i<sfEls.length; i++) { 
+sfEls[i].onmouseover=function() { 
+this.className+=(this.className.length>0? " ": "") + "sfhover"; 
+} 
+sfEls[i].onMouseDown=function() { 
+this.className+=(this.className.length>0? " ": "") + "sfhover"; 
+} 
+sfEls[i].onMouseUp=function() { 
+this.className+=(this.className.length>0? " ": "") + "sfhover"; 
+} 
+sfEls[i].onmouseout=function() { 
+this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"), 
+""); 
+} 
+} 
+} 
+window.onload=menuFix; 
+</SCRIPT>
+	<STYLE type=text/css>
+*{margin:0;padding:0;border:0;}
+#fm { line-height: 24px; list-style-type: none; background:#CFC; }/*设置盒子的行高，去掉标记，设置背景颜色*/
+#fm a { display: block; width: 80px; text-align:center; }/*设置A标签为块元素不显示，宽度，居中*/
+#fm a:link { color:#666; text-decoration:none; } /* 设置未访问的链接样式*/
+#fm a:visited { color:#666;text-decoration:none; } /* 设置已访问的链接样式 */
+#fm a:hover { color:#FFF;text-decoration:none;font-weight:bold; }  /* 当有鼠标悬停在链接上的颜色 */
+#fm li { float: left; width: 150px; background:#CCC; }
+#fm li a:hover{ background:#CC6; }
+#fm li ul { line-height: 27px; list-style-type: none;text-align:left; left: -999em; width: 80px; position: absolute; }
+#fm li ul li{ float: left; width: 80px; background: #F6F6F6; } 
+#fm li ul a{ display: block; width: 80px;width: 80px;text-align:left;padding-left:5px; } 
+#fm li ul a:link { color:#666; text-decoration:none; } 
+#fm li ul a:visited { color:#666;text-decoration:none; } 
+#fm li ul a:hover { color:#F3F3F3;text-decoration:none;font-weight:normal; background:#C00; } 
+#fm li:hover ul { left: auto; } 
+#fm li.sfhover ul { left: auto; } 
+#content { clear: left; } 
+</STYLE>
+</head>
+<body  bgcolor="#CC3300">
+	 <p style="text-align:center">
+	<img  src="哈哈.png"   title="点击进入首页"/>
+    <hr/>
+    </p> 
+    <p align="right"> 
+   <a href="登陆页面.html" align="right">登陆</a>
+    <a href="多彩社团.html" align="right">多彩社团</a>
+   </p>
+ <p>
+<UL id=fm> 
+<LI>
+<A href="#">类型导航</A> 
+<UL> 
+<LI><A href="音乐协会.html">兴趣</A></LI> 
+<LI><A href="https://www.baidu.com/"target="_blank">运动</A></LI> 
+<LI><A href="#">学术</A></LI> 
+<LI><A href="#">娱乐</A></LI>
+</UL>
+</LI> 
+
+<LI>
+<A href="#">学校导航</A> 
+<UL id="fm"> 
+<LI><A href="#">广西</A> 
+<LI><A href="#">湖南</A></LI> 
+<LI><A href="#">上海</A></LI> 
+<LI><A href="#">南京</A></LI> 
+<LI><A href="#">四川</A></LI></UL></LI> 
+
+</UL></p>
+   
+   
+   	  <p style="text-align:center">
+      <img src="音乐.jpg" align="center"  title="大学生社团联盟网站" vspace="800" hspace="200" />
+      </p>
+      </body>
+</html>
