@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	.header{
+		width: 1220px;
+		height: 80px;
+		margin: 0px auto;
+		border-radius: 0px 0px 5px 5px;
+		box-shadow: 0px 0px 10px 2px rgb(0,0,0,0.1);
+	}
+	.ads{
+		overflow: hidden;
+		width: 1220px;
+		height: 400px;
+		margin: 15px auto;
+		border-radius: 5px;
+	}
+	.middle_content{
+		width: 1220px;
+		height: 1140px;
+		margin: 0px auto;
+	}
+	.club_content{
+		width: 66%;
+		height: 775px;
+		float: left;
+	}
+	.news_push{
+		width: 34%;
+		height: 775px;
+		float: left;
+	}
+	.best_club,.activity_video{
+		width: 100%;
+		height: 380px;
+		margin-bottom: 15px;
+		border-radius: 5px;
+		box-shadow: 0px 0px 10px 2px rgb(0,0,0,0.1);
+	}
+	.announcement,.information{
+		width: 96%;
+		height: 380px;
+		float: right;
+		margin-bottom: 15px;
+		border-radius: 5px 5px 5px 5px;
+		box-shadow: 0px 0px 10px 2px rgb(0,0,0,0.1);
+	}
+	.knowledge_push{
+		float: left;
+		width: 100%;
+		height: 350px;
+		margin: 15px auto;
+		border-radius: 5px;
+		box-shadow: 0px 0px 10px 2px rgb(0,0,0,0.1);
+	}
+	.footer{
+		width: 1220px;
+		height: 300px;
+		margin: 15px auto 0px auto;
+		border-radius: 5px 5px 0px 0px;
+		background-color: #222222;
+	}
+	.banner{
+		width: 6100px;
+		height: 400px;
+	}
+	.banner a,.banner img{
+		display: block;
+		text-decoration: none;
+		width: 1220px;
+		height: 400px;
+		float: left;
+	}
+	.logo,.nav,.search,.login,.register{
+		float: left;
+		height: 80px;
+	}
+	.logo{
+		width: 219.6px;
+	}
+	.logo a,.logo img{
+		width: 219.6px;
+		height: 80px;
+		display: block;
+		text-decoration: none;
+	}
+	.nav{
+		width: 437.6px;
+		height: 50px;
+		margin-top: 12px;
+		border-radius: 5px;
+		border: 3px solid #FF0000;
+	}
+	.search{
+		width: 321.6px;
+		height: 30px;
+		margin-top: 25px;
+		border-radius: 5px;
+		margin-left: 20px;
+		margin-right: 20px;
+		box-shadow: 0px 0px 5px 1px rgb(0,0,0,0.10);
+	}
+	.login{
+		width: 77.6px;
+		height: 30px;
+		margin-top: 25px;
+		margin-right: 10px;
+		border-radius: 5px;
+		line-height: 30px;
+		text-align: center;
+		background-color: #0099FF;
+		color: white;
+		
+	}
+	.login a,.register a{
+		display: block;
+		text-decoration: none;
+		color: white;
+		font-size: 15px;
+	}
+	.register{
+		width: 77.6px;
+		height: 30px;
+		margin-top: 25px;
+		margin-left: 5px;
+		margin-right: 10px;
+		border-radius: 5px;
+		line-height: 30px;
+		text-align: center;
+		background-color: #FF0000;
+		color: white;
+	}
+	.login:hover{
+		background-color: #6CC4FF;
+	}
+	.register:hover{
+		background-color: #FF7474;
+	}
+	.nav_item{
+		float: left;
+		width:99.4px;
+		margin-left: 5px;
+		margin-right: 5px;
+		height: 40px;
+		margin-top: 5px;
+		text-align: center;
+		line-height: 40px;
+		font-size: 20px;
+		color: black;
+		border-radius: 5px;
+		transition: 0.5s;
+		
+	}
+	.nav_item a{
+		display: block;
+		text-decoration: none;
+		color: black;
+	}
+	.nav_item a:hover{
+		transition: linear 0.1s;
+	}
+	.nav_item:hover{
+		box-shadow: 0px 0px 10px 1px rgb(0,0,0,0.15);
+	}
+	.nav_item img{
+		display: inline;
+		width: 15px;
+		height: 15px;
+	}
+	.card_title{
+		
+	}
+</style>
+<title>主页</title>
+</head>
+
+<body>
+	<div class="header">
+		<div class="logo"><a href="#main"><img src="image/youtube.svg" alt=""></a></div>
+		<div class="nav">
+			<div class="nav_item"><a href="#main"><strong>主页</strong></a></div>
+			<div class="nav_item"><a href="#club"><strong>社团</strong></a></div>
+			<div class="nav_item"><a href="#activity"><strong>活动</strong></a></div>
+			<div class="nav_item"><span><strong><a href="#more">更多<img src="image/more_arrow.svg" alt="more"></a></strong></span></div>
+		</div>
+		<div class="search">
+			<div class="magnifying_glass"></div>
+			<div class="search_input"></div>
+		</div>
+		<div class="login"><a href="#login">登录</a></div>
+		<div class="register"><a href="#register">注册</a></div>
+	</div>
+	<div class="ads">
+		<div class="banner">
+			<a href="#ad1"><img src="image/banner-01.png" alt=""></a>
+		</div>
+	</div>
+	<div class="middle_content">
+		<div class="club_content">
+			<div class="best_club">
+				<div class="card_title"></div>
+				<div class="club_introdution"></div>
+				<div class="card_bottom"></div>
+			</div>
+			<div class="activity_video">
+				<div class="card_title"></div>
+				<div class="acticity_list"></div>
+				<div class="card_bottom"></div>
+			</div>
+		</div>
+		<div class="news_push">
+			<div class="announcement">
+				<div class="news_title"></div>
+				<div class="news_content"></div>
+			</div>
+			<div class="information">
+				<div class="news_title"></div>
+				<div class="news_content"></div>
+			</div>
+		</div>
+		<div class="knowledge_push"></div>
+	</div>
+	<div class="footer"></div>
+</body>
+</html>
+<script>
+	var width = window.innerWidth*0.8;
+	console.log(width);
+</script>
